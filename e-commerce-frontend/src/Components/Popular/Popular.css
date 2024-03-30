@@ -1,0 +1,89 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 1280px;
+    margin: auto;
+}
+.popular h1{
+    color: #171717;
+    font-size: 40px;
+    font-weight: 600;
+}
+.popular hr{
+    width: 150px;
+    height: 4px;
+    border-radius: 10px;
+    background: #252525;
+}
+.popular-item{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+/* ---------- media query------------ */
+
+@media(max-width: 800px){
+    .popular h1{
+        font-size: 30px;
+    }
+    .popular hr{
+        width: 80px;
+        height: 4px;
+        
+    }
+}
+/* Popular.css */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:hover {
+    background-color: #ccc;
+  }
+  
+  .pagination button.active {
+    background-color: #333;
+    color: #fff;
+  }
+  .search-bar {
+    position: relative;
+  }
+  
+  .search-bar input[type="text"] {
+    width: calc(120%); /* Set width to 100% minus the width of the icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Add border radius */
+    padding: 10px 40px 10px 10px; /* Adjust padding */
+    box-sizing: border-box; /* Include padding in width */
+    border: 1px soli red !important;
+  }
+  
+  .search-bar input[type="text"]::placeholder {
+    color: #aaa; /* Placeholder text color */
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: -22px; /* Adjust icon position */
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
